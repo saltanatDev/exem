@@ -1,0 +1,20 @@
+/*body {*/
+/*    background: url("./img/61a3717d1b093a1db8cde52700e7fbc5.jpg")no-repeat center;*/
+/*    line-height: 100%;*/
+/*}*/
+
+body {
+    background: #e7b1e7;
+}
+
+.container {
+    margin: 20px 20px;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #00000e;
+    margin-right: 20px;
+}
