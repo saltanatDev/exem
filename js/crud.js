@@ -3,10 +3,9 @@ const input1 = document.querySelector('.input1')
 const btn = document.querySelector('.add-btn')
 const ul = document.querySelector('.ul')
 
-localStorage.setItem("task", JSON.stringify({name: "Saltanat", surname: "Kamalova"}))
 
 function addTask() {
-   let tasks = JSON.parse(localStorage.getItem("task")) || []
+    let tasks = JSON.parse(localStorage.getItem("task")) || []
     let newList = `<li class=" list list-group-item d-flex justify-content-between align-items-center">
 <span class="d-flex align-items-center"> <div class="block d-flex align-item-center justify-content-center">
 ${input.value[0]}${input1.value[0]}</div>
@@ -26,8 +25,8 @@ btn.addEventListener('click', (e) => {
         name: input.value,
         surname: input1.value
     }
-    tasks = [...tasks,newTask]
-    localStorage.setItem("task",JSON.stringify(tasks))
+    tasks = [...tasks, newTask]
+    localStorage.setItem("task", JSON.stringify(tasks))
     addTask()
 })
 
